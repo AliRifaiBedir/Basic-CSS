@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="MITAT"></div>
+        <script>
+            // Check browser support
+            if (typeof(Storage) != "undefined") {
+                // DEPOLA
+                localStorage.setItem("SOYAD", "UYSAL");
+                // VERIYE ERIS
+                document.getElementById("MITAT").innerHTML = localStorage.getItem("SOYAD");
+            } else {
+                document.getElementById("MITAT").innerHTML = "TARAYICINIZDA WEB STORAGE OZELLIGI YOK";
+            }
+        </script>
+    </body>
+</html>

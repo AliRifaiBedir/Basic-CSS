@@ -1,0 +1,32 @@
+!DOCTYPE html>
+    <html>
+        <head>
+            <script>
+                function GOSTER(kitap)
+                {
+                    var kittip = kitap.getAttribute("data-kitap-tip");
+                    alert("" + kitap.innerHTML + " TURUNDE BIR KITAP " + kittip + " LERDEN OLUSUR");
+                }
+            </script>
+        </head>
+        <body>
+           
+            <h1>KITAPLAR</h1>
+            <p>Kitaplar icin tikla...:</p>
+           
+            <ul>
+                <li onclick="GOSTER(this)" id="ro" data-kitap-tip="ROMAN">ROMAN</li>
+                <li onclick="GOSTER(this)" id="an" data-kitap-tip="ANI">ANI</li>
+                <li onclick="GOSTER(this)" id="si" data-kitap-tip="SIIR">SIIR</li>
+            </ul>
+           
+        </body>
+    </html>
+	
+	
+	<!--
+	JavaScript'te, belirli bir HTML5 elemanına erişmek için, elemanın tek bir "id" değeri olmalıdır.
+	JavaScript'in getElementById() fonksiyonunu kullanarak, 
+	belirlenmiş bir elemanı çağırabilirsiniz. Bu metoda elemanın "id" değeri parametre olarak gönderilir.
+	
+	-->
